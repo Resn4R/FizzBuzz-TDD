@@ -10,7 +10,11 @@ import Foundation
 struct FizzBuzz {
     let value: Int
     
-    func printValue() -> Int {
-        value
+    func printValue() -> String {
+        if value == 3 {
+            "Fizz"
+        } else {
+            String(value)
+        }
     }
 }

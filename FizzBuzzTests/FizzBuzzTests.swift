@@ -16,9 +16,19 @@ import XCTest
 
 final class FizzBuzzTests: XCTestCase {
 
-    func testExample() throws {
+    func testNumberOneIsEqualsToOne() throws {
         let fizzBuzz = FizzBuzz(value: 1)
-        XCTAssertEqual(fizzBuzz.printValue(), 1)
+        XCTAssertEqual(fizzBuzz.printValue(), "1")
+    }
+    
+    func testNumberTwoEqualsToTwo() {
+        let fizzBuzz = FizzBuzz(value: 2)
+        XCTAssertEqual(fizzBuzz.printValue(), "2")
+    }
+    
+    func testNumberThreeEqualsToFizz() {
+        let fizzBuzz = FizzBuzz(value: 3)
+        XCTAssertEqual(fizzBuzz.printValue(), "Fizz")
     }
 
 }
