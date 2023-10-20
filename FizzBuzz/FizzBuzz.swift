@@ -13,6 +13,8 @@ struct FizzBuzz {
     func printValue() -> String {
         if value == 3 {
             "Fizz"
+        } else if value == 5 {
+            "Buzz"
         } else {
             String(value)
         }
