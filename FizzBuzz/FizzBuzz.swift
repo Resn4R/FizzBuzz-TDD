@@ -11,12 +11,10 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-        if value == 3 {
-            "Fizz"
-        } else if value == 5 {
-            "Buzz"
-        } else {
-            String(value)
+        switch value {
+        case 3: "Fizz"
+        case 5: "Buzz"
+        default: String(value)
         }
     }
 }

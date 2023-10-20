@@ -35,5 +35,5 @@ final class FizzBuzzTests: XCTestCase {
         let fizzBuzz = FizzBuzz(value: 5)
         XCTAssertEqual(fizzBuzz.printValue(), "Buzz")
     }
-
+    
 }
