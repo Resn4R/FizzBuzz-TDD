@@ -13,7 +13,7 @@ struct FizzBuzz {
     func printValue() -> String {
         if value % 3 == 0{
             "Fizz"
-        } else if value == 5 {
+        } else if value % 5 == 0 {
             "Buzz"
         } else {
             String(value)
