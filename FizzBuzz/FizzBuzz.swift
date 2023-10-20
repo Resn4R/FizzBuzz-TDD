@@ -11,7 +11,7 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-        var result = ""
+            var result = ""
         let link = [(2,"Pew"), (3,"Fizz"), (5,"Buzz")]
         
         link.forEach { (key: Int, word: String) in
@@ -20,8 +20,6 @@ struct FizzBuzz {
             }
         }
         
-        result.isEmpty ? result = String(value) : nil
-        
-        return result
+       return result.isEmpty ? String(value) : result
     }
 }
