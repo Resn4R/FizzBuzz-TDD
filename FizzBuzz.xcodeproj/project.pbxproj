@@ -14,6 +14,7 @@
 		4FDA12DA2AE2F646005A7A64 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA12D92AE2F646005A7A64 /* FizzBuzzTests.swift */; };
 		4FDA12E42AE2F646005A7A64 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA12E32AE2F646005A7A64 /* FizzBuzzUITests.swift */; };
 		4FDA12E62AE2F646005A7A64 /* FizzBuzzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA12E52AE2F646005A7A64 /* FizzBuzzUITestsLaunchTests.swift */; };
+		4FDA12F32AE2F950005A7A64 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA12F22AE2F950005A7A64 /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4FDA12DF2AE2F646005A7A64 /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDA12E32AE2F646005A7A64 /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		4FDA12E52AE2F646005A7A64 /* FizzBuzzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FDA12F22AE2F950005A7A64 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4FDA12C82AE2F643005A7A64 /* FizzBuzzApp.swift */,
 				4FDA12CA2AE2F643005A7A64 /* ContentView.swift */,
+				4FDA12F22AE2F950005A7A64 /* FizzBuzz.swift */,
 				4FDA12CC2AE2F645005A7A64 /* Assets.xcassets */,
 				4FDA12CE2AE2F645005A7A64 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				4FDA12CB2AE2F643005A7A64 /* ContentView.swift in Sources */,
 				4FDA12C92AE2F643005A7A64 /* FizzBuzzApp.swift in Sources */,
+				4FDA12F32AE2F950005A7A64 /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
