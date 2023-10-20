@@ -14,18 +14,17 @@ struct FizzBuzz {
         
         let isDivisibleBy3 = value % 3 == 0
         let isDivisibleBy5 = value % 5 == 0
-        let isDivisibleByBoth = value % 15 == 0
         
         var result = ""
         
-        if isDivisibleByBoth {
-            result = "FizzBuzz"
-        } else if isDivisibleBy5 {
-           result =  "Buzz"
-        } else if isDivisibleBy3 {
-            result =  "Fizz"
-        } else {
-            result = String(value)
+        if isDivisibleBy3 {
+           result +=  "Fizz"
+        }
+        if isDivisibleBy5 {
+            result +=  "Buzz"
+        }
+        if result.isEmpty {
+            result += String(value)
         }
         
         return result
