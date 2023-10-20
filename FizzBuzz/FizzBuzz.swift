@@ -14,7 +14,7 @@ struct FizzBuzz {
         let link = [(2,"Pew"), (3,"Fizz"), (5,"Buzz")]
         
         let result = link.reduce("") { result, next in
-            if value % next.0 == 0 {
+            if value.isMultiple(of: next.0) {
                 return result + next.1
             }
             return result
