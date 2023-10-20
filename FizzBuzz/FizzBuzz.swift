@@ -11,15 +11,15 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-            var result = ""
         let link = [(2,"Pew"), (3,"Fizz"), (5,"Buzz")]
         
-        link.forEach { (key: Int, word: String) in
-            if value % key == 0 {
-                result += word
+        let result = link.reduce("") { result, next in
+            if value % next.0 == 0 {
+                return result + next.1
             }
+            return result
         }
         
-       return result.isEmpty ? String(value) : result
+        return result.isEmpty ? String(value) : result
     }
 }
