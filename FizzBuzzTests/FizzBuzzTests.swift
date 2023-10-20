@@ -46,5 +46,8 @@ final class FizzBuzzTests: XCTestCase {
         XCTAssertEqual(fizzBuzz.printValue(), "Buzz")
     }
     
-    
+    func testNumberFifteenIsFizzBuzz() {
+        let fizzBuzz = FizzBuzz(value: 15)
+        XCTAssertEqual(fizzBuzz.printValue(), "FizzBuzz")
+    }
 }
