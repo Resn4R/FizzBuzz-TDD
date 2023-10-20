@@ -23,7 +23,7 @@ final class FizzBuzzTests: XCTestCase {
     
     func testNumberTwoEqualsToTwo() {
         let fizzBuzz = FizzBuzz(value: 2)
-        XCTAssertEqual(fizzBuzz.printValue(), "2")
+        XCTAssertEqual(fizzBuzz.printValue(), "Pew")
     }
     
     func testNumberThreeEqualsToFizz() {
@@ -38,12 +38,12 @@ final class FizzBuzzTests: XCTestCase {
     
     func testNumberSixEqualsToFizz() {
         let fizzBuzz = FizzBuzz(value: 6)
-        XCTAssertEqual(fizzBuzz.printValue(), "Fizz")
+        XCTAssertEqual(fizzBuzz.printValue(), "PewFizz")
     }
     
     func testNumberTenEqualsBuzz() {
         let fizzBuzz = FizzBuzz(value: 10)
-        XCTAssertEqual(fizzBuzz.printValue(), "Buzz")
+        XCTAssertEqual(fizzBuzz.printValue(), "PewBuzz")
     }
     
     func testNumberFifteenIsFizzBuzz() {
@@ -53,6 +53,6 @@ final class FizzBuzzTests: XCTestCase {
     
     func testNumberThirtyIsFizzBuzz() {
         let fizzBuzz = FizzBuzz(value: 30)
-        XCTAssertEqual(fizzBuzz.printValue(), "FizzBuzz")
+        XCTAssertEqual(fizzBuzz.printValue(), "PewFizzBuzz")
     }
 }

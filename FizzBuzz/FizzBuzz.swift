@@ -11,21 +11,16 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-        
-        let isDivisibleBy3 = value % 3 == 0
-        let isDivisibleBy5 = value % 5 == 0
-        
         var result = ""
+        let link = [(2,"Pew"), (3,"Fizz"), (5,"Buzz")]
         
-        if isDivisibleBy3 {
-           result +=  "Fizz"
+        link.forEach { (key: Int, word: String) in
+            if value % key == 0 {
+                result += word
+            }
         }
-        if isDivisibleBy5 {
-            result +=  "Buzz"
-        }
-        if result.isEmpty {
-            result += String(value)
-        }
+        
+        result.isEmpty ? result = String(value) : nil
         
         return result
     }
