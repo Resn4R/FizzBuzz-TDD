@@ -11,14 +11,23 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-        if value % 15 == 0 {
-            "FizzBuzz"
-        } else if value % 5 == 0 {
-            "Buzz"
-        } else if value % 3 == 0 {
-            "Fizz"
+        
+        let isDivisibleBy3 = value % 3 == 0
+        let isDivisibleBy5 = value % 5 == 0
+        let isDivisibleByBoth = value % 15 == 0
+        
+        var result = ""
+        
+        if isDivisibleByBoth {
+            result = "FizzBuzz"
+        } else if isDivisibleBy5 {
+           result =  "Buzz"
+        } else if isDivisibleBy3 {
+            result =  "Fizz"
         } else {
-            String(value)
+            result = String(value)
         }
+        
+        return result
     }
 }
