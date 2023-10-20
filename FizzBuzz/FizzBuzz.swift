@@ -11,7 +11,7 @@ struct FizzBuzz {
     let value: Int
     
     func printValue() -> String {
-        if value == 3 || value == 6 {
+        if value % 3 == 0{
             "Fizz"
         } else if value == 5 {
             "Buzz"
